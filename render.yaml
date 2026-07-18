@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dtr-original-render
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    plan: standard
+  - type: web
+    name: dtr-original-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    plan: starter
